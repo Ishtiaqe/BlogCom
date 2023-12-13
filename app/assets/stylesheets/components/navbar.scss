@@ -1,0 +1,43 @@
+nav {
+  background: white;
+  border-bottom: 1px solid $light-gray;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+  // margin-left: calc(100vw - 100%);
+
+  #nav-container {
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a img {
+      max-height: 35px;
+    }
+
+
+
+
+    #tools {
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      width: 140px;
+
+      img {
+        width: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+nav #tools img {
+  max-height: 35px;
+}

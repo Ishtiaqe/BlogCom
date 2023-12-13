@@ -1,0 +1,55 @@
+{
+  "name": "instants",
+  "version": "1.0.2",
+  "description": "Instants is a full-stack web application built with Ruby on Rails, and React/Redux. Inspired by Instagram.",
+  "main": "index.js",
+  "author": {
+    "name": "Mendel Konikov",
+    "email": "mkonikov@gmail.com"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "engines": {
+    "node": "10.14.1",
+    "npm": "6.4.x"
+  },
+  "scripts": {
+    "webpack": "webpack --watch",
+    "postinstall": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkonikov/instants.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkonikov/instants/issues"
+  },
+  "homepage": "https://github.com/mkonikov/instants#readme",
+  "dependencies": {
+    "lodash": "^4.17.19",
+    "moment": "2.24.0",
+    "moment-timezone": "^0.5.27",
+    "prop-types": "^15.7.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-dropzone": "10.1.10",
+    "react-moment": "0.9.6",
+    "react-redux": "7.1.3",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "redux-logger": "^3.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

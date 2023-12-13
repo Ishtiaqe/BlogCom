@@ -1,0 +1,132 @@
+#upload_modal {
+
+  div#form-image {
+    background: #b7a9a9;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+
+    label {
+      padding: 20px;
+      display: block;
+    }
+
+  }
+
+  button[type='submit'] {
+    background: #3897f0;
+    color: white;
+    font-weight: 500;
+    border: 0;
+    line-height: 26px;
+    cursor: pointer;
+    padding: 10px 73px;
+    font-size: 20px;
+    border-radius: 3px;
+  }
+  button:disabled,
+  button[disabled] {
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+  }
+
+  button .fa {
+    position: static;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  #form-main {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+
+    h2 {
+      font-size: 40px;
+      font-weight: 200;
+    }
+    textarea {
+      margin-top: 50px;
+      width: 100%;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 200;
+      height: 200px;
+      padding: 0;
+    }
+    .form-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        cursor: pointer;
+        color: $blue;
+      }
+
+      a:active {
+        opacity: 0.5;
+      }
+    }
+
+  }
+
+
+  .form-container {
+    width: 1000px;
+    margin: auto;
+    background: white;
+    display: flex;
+    height: 500px;
+    z-index: 50;
+    position: relative;
+
+    form {
+
+    }
+  }
+
+}
+
+#upload_modal {
+  display: flex;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.form-container form {
+  display: flex;
+  width: 100%;
+}
+
+.form-container form > div {
+  max-width: 500px;
+  flex: 1;
+}
+
+.drop-zone {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.drop-default {
+  cursor: pointer;
+}
+
+#form-image > img {
+  object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,170 @@
+#friend-no-posts {
+  padding: 200px 60px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+#self-no-posts {
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+  text-align: center;
+
+  .message {
+    width: 100%;
+    text-align: center;
+
+    & h4 {
+      font-weight: 600;
+      color: $light-black;
+      font-size: 18px;
+    }
+  }
+
+  img {
+    width: 380px;
+    display: block;
+  }
+}
+
+#profile {
+  #details {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  button, a.edit-profile {
+    padding: 0 24px;
+    cursor: pointer;
+    line-height: 26px;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+  button.follow {
+    background: $blue;
+    border: 1px solid $blue;
+    color: white;
+  }
+  button.unfollow {
+    border: 1px solid #dbdbdb;
+    color: $light-black;
+  }
+  a.edit-profile {
+    border: 1px solid #dbdbdb;
+    text-decoration: none;
+    display: inline-block;
+    color: $light-black;
+  }
+  .avatar > div {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+  }
+  .avatar > div:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+  }
+  .avatar {
+    width: 293px;
+    margin-right: 30px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      border-radius: 100%;
+    }
+
+  }
+  .user-head {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .username {
+    font-size: 32px;
+    font-weight: 200;
+    margin-right: 20px;
+  }
+  .bio {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .full-name {
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      &:empty {
+        width: 293px;
+        height: 0;
+      }
+    }
+  }
+
+}
+
+.post-item {
+  margin-bottom: 30px;
+  position: relative;
+
+  img {
+    display: block;
+  }
+
+}
+.post-item-hover {
+  display: none;
+}
+.post-item:hover .post-item-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  right: 0;
+
+  .like-count {
+    margin-right: 20px;
+  }
+}
+
+.profile-counts {
+  display: flex;
+  margin: 20px 0;
+  font-size: 16px;
+
+  div {
+  margin-right: 40px;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+.modal .fa-trash-o {
+  position: static;
+  color: $gray;
+
+  &:hover {
+    color: $red;
+  }
+}
